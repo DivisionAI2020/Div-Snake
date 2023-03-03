@@ -87,7 +87,7 @@
 	
 	<h1 style="position: absolute; padding-left:1020px; padding-top:200px; font-size:3.5rem; color:black; border:3px black; font-family: Times New Roman">Progressive Mode:</h1>
 	
-	<h1 style="position: absolute; padding-left:1060px; padding-top:270px; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">(You get faster per apple)</h1>
+	<h1 style="position: absolute; padding-left:1060px; padding-top:275px; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">(You get faster per apple)</h1>
 	
 	<h1 style="position: absolute; padding-left:1040px; padding-top:720px; font-size:1.5rem; color:black; border:3px black; font-family: Times New Roman">Game made by a bored highschool student.</h1>
 	
@@ -95,10 +95,12 @@
 	
 	<h1 style="position: absolute; padding-left:1093px; padding-top:0px; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">(To restart game click any of the modes)</h1>
 	
-	<h1 style="position: absolute; padding-left:1200px; padding-top:520px; font-size:1.5rem; color:black; border:3px black; font-family: Times New Roman">Ad Space</h1>
+	<h1 style="position: absolute; padding-left:1175px; padding-top:520px; font-size:1.5rem; color:black; border:3px black; font-family: Times New Roman">More Ad Space</h1>
+	
+	<h1 style="position: absolute; padding-left:1740px; padding-top:370px; font-size:1.5rem; color:black; border:3px black; font-family: Times New Roman">Ad Space</h1>
 
 	
-	<h1 style="position: absolute; padding-left:1600px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.4.1</h1>
+	<h1 style="position: absolute; padding-left:1800px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.4.2</h1>
 	
 	<button class="EasyG" onclick="gameEasy();">Easy</button>
 	
@@ -118,6 +120,10 @@
 	
 <div style="position:absolute; left:910px; top:450px; ">	
 	<canvas id="canvas2" width="700" height="250"></canvas>
+</div>
+
+<div style="position:absolute; left:1700px; top:100px; ">	
+	<canvas id="canvas3" width="200" height="600"></canvas>
 </div>
 
 <script src = "https://code.jquery.com/jquery-2.1.0.js"> //jquery set up </script> 
@@ -189,11 +195,21 @@
 		
 	};
 	
+	var canvas3 = document.getElementById("canvas3");
+	var ctx3 = canvas3.getContext("2d");
+	
+	var adSpace2 = function () {
+		ctx3.strokeStyle = "grey";
+		ctx3.lineWidth = 5;
+		ctx3.strokeRect(0, 0, 200, 600);
+	};
+		
 	
 	backColor();
 	backColorChecker();
 	startBorder();
 	adSpace();
+	adSpace2();
 	
 //easy
 	function gameEasy() {
@@ -217,7 +233,7 @@
 	var backColor = function () {
 		ctx.fillStyle = "#2bcc2b"
 		ctx.fillRect(0, 0, 800, 800)
-	}
+	};
 	
 	var backColorChecker = function () {
 		ctx.fillStyle = "#1d8f1d";
