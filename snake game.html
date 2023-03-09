@@ -105,6 +105,12 @@
 	
 	<h1 style="position: absolute; padding-left:1800px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.4.4</h1>
 	
+	<h1 style="position: absolute; padding-left:1750px; padding-top:700px; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">Update Log:</h1>
+	
+	<h1 style="position: absolute; padding-left:1750px; padding-top:720px; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">Added audio</h1>
+	
+	<h1 style="position: absolute; padding-left:1710px; padding-top:740px; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">Fixed checkered pattern</h1>
+	
 	<button class="EasyG" onclick="gameEasy();">Easy</button>
 	
 	<button class="MediumG" onclick="gameMedium()">Medium</button>
@@ -134,6 +140,14 @@
 	<script>
 	
 	document.body.style.backgroundColor = "#c2c2c2";
+	
+	
+	//audio stuff
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
+	
 	
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
@@ -390,6 +404,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
 		setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -399,6 +414,7 @@
 
       if (newHead.equal(apple.position)) {
         score = score + 5;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -513,6 +529,11 @@
 	
 //medium
 	function gameMedium() {
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
 	 // Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -710,6 +731,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1);
         return;
@@ -719,6 +741,7 @@
 
       if (newHead.equal(apple.position)) {
         score = score + 5;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -832,6 +855,11 @@
 
 //hard
 	function gameHard() {
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
 	// Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -1107,6 +1135,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -1116,6 +1145,7 @@
 
       if (newHead.equal(apple.position)) {
         score = score + 5;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -1229,7 +1259,12 @@
 	
 //insane
 	function gameInsane() {
-// Set up canvas
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
+	// Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
 
@@ -1475,6 +1510,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -1484,6 +1520,7 @@
 
       if (newHead.equal(apple.position)) {
         score = score + 5;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -1597,6 +1634,11 @@
 
 //progressive easy
 	function gameProgressiveEasy() {
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
 		  // Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -1794,6 +1836,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -1804,6 +1847,7 @@
       if (newHead.equal(apple.position)) {
         score = score + 5;
 		animationTime -= 5;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -1916,6 +1960,11 @@
 
 //progressive medium
 	function gameProgressiveMedium() {
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
 			  // Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -2113,6 +2162,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -2123,6 +2173,7 @@
       if (newHead.equal(apple.position)) {
         score = score + 5;
 		animationTime -= 10;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
@@ -2235,6 +2286,11 @@
 	
 //progressive hard	
 	function gameProgressiveHard () {
+	
+	var appleDing = new Audio("https://divisionai2020.github.io/Snake-Game/AppleDing.mp3");
+	
+	var gameOverCrashAudio = new Audio("https://divisionai2020.github.io/Snake-Game/audio%20crash.mp3");
+	
 				  // Set up canvas
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -2432,6 +2488,7 @@
       }
 
       if (this.checkCollision(newHead)) {
+		gameOverCrashAudio.play();
         setTimeout(gameOver, 1);
 		setTimeout(gameOverScore, 1)
         return;
@@ -2442,6 +2499,7 @@
       if (newHead.equal(apple.position)) {
         score = score + 5;
 		animationTime -= 12;
+		appleDing.play();
         apple.move(this.segments);
       } else {
         this.segments.pop();
