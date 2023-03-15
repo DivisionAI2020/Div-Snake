@@ -39,6 +39,10 @@
 	
 <img  id="score-box" style="position: absolute; left: 920px; top: 185px;" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/SnakeLogo1.png">
 
+<img  id="snake" style="position: absolute; left: 96px; top: 102px;" width=600 height=600 src="https://divisionai2020.github.io/Div-Snake/menu%20snake%201.png">
+
+<img  id="snake" style="position: absolute; left: 1300px; top: 300px; z-index: 20;" width=600 height=600 src="https://divisionai2020.github.io/Div-Snake/menuSnake2.png">
+
 <h1 style="position: absolute; padding-left:1800px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.5.1</h1>
 
 <a href="https://divisionai2020.github.io/Div-Snake/snake%20game.html">	
@@ -51,6 +55,10 @@
 
 
 	<canvas id="canvas" width="600" height="600"></canvas>
+	
+<Div style="position: absolute; left:1310px; top:360px">
+	<canvas id="canvas2" width="600" height="600"></canvas>
+</Div>
 	
 	<script>
 	document.body.style.backgroundColor = "#c2c2c2";
@@ -89,12 +97,48 @@
 		ctx.fillRect(0, 300, 100, 100);
 	};
 	
+	var canvas2 = document.getElementById("canvas2");
+	var ctx2 = canvas2.getContext("2d");
+	
+	var border2 = function() {
+		ctx2.fillStyle = "grey";
+		ctx2.fillRect(590, 0, 10, 600)
+		ctx2.fillRect(0, 590, 600, 10)
+	};
+	
+	var cheaker3 = function () {
+		ctx2.margin = 0;
+		ctx2.fillStyle = "#2bcc2b";
+		ctx2.fillRect(400, 500, 100, 100);
+		ctx2.fillRect(200, 500, 100, 100);
+		ctx2.fillRect(300, 400, 100, 100);
+		ctx2.fillRect(500, 400, 100, 100);
+		ctx2.fillRect(400, 300, 100, 100);
+		ctx2.fillRect(500, 200, 100, 100);
+	};
+	
+	var cheaker4 = function () {
+		ctx2.margin = 0;
+		ctx2.fillStyle = "#1d8f1d";
+		ctx2.fillRect(500, 500, 100, 100);
+		ctx2.fillRect(300, 500, 100, 100);
+		ctx2.fillRect(100, 500, 100, 100);
+		ctx2.fillRect(500, 300, 100, 100);
+		ctx2.fillRect(500, 100, 100, 100);
+		ctx2.fillRect(400, 400, 100, 100);
+		ctx2.fillRect(300, 300, 100, 100);
+		ctx2.fillRect(400, 200, 100, 100);
+		ctx2.fillRect(200, 400, 100, 100);
+	};
+	
 	
 	//call the cheaker colors
+	cheaker3();
+	cheaker4();
+	border2();
 	cheaker();
 	cheaker2();
 	border();
-	
 	
 	
 	</script>
