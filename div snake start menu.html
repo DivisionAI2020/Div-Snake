@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Div Snake - Menu</title>
+	
+	<link rel="icon" href="https://divisionai2020.github.io/Div-Snake/tabPicture.png"></link>
+	
+	<style>
+	
+	.start{
+		position: absolute;
+		height:50;
+		width:50;
+		top:450px;
+		left:655px;
+		font-size: 5rem;
+		font-weight: bold;
+		background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+	}
+	
+	.donation{
+			position: absolute;
+			height:50;
+			width:50;
+			top:20px;
+			left:1700px;
+		}
+	
+	</style>
+</head>
+
+<body>
+
+<img  id="score-box" style="position: absolute; left: 750px; top: 0px" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/DivDevLogo1.png">
+	
+<img  id="score-box" style="position: absolute; left: 670px; top: 200px;" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/DivLogo1.png">
+	
+<img  id="score-box" style="position: absolute; left: 920px; top: 185px;" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/SnakeLogo1.png">
+
+<h1 style="position: absolute; padding-left:1800px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.5.1</h1>
+
+<a href="https://divisionai2020.github.io/Div-Snake/snake%20game.html">	
+	<button class="start" onclick="" onmouseover="">Play Div Snake</button>
+</a>
+
+<a href="https://divisionai2020.github.io/Div-Snake/Div%20Donation.html">	
+	<button class="donation" onclick="">Donate</button>
+</a>
+
+
+	<canvas id="canvas" width="600" height="600"></canvas>
+	
+	<script>
+	document.body.style.backgroundColor = "#c2c2c2";
+	
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	var border = function () {
+		ctx.fillStyle = "grey";
+		ctx.fillRect(0, 0, 10, 600)
+		ctx.fillRect(0, 0, 600, 10)
+	};
+	
+	var cheaker = function () {
+		ctx.margin = 0;
+		ctx.fillStyle = "#2bcc2b";
+		ctx.fillRect(0, 0, 100, 100);
+		ctx.fillRect(200, 0, 100, 100);
+		ctx.fillRect(0, 200, 100, 100);
+		ctx.fillRect(100, 100, 100, 100);
+		ctx.fillRect(0, 400, 100, 100);
+		ctx.fillRect(100, 300, 100, 100);
+		ctx.fillRect(200, 200, 100, 100);
+		ctx.fillRect(300, 100, 100, 100);
+		ctx.fillRect(400, 0, 100, 100);
+	};
+	
+	var cheaker2 = function () {
+		ctx.margin = 0;
+		ctx.fillStyle = "#1d8f1d";
+		ctx.fillRect(100, 0, 100, 100);
+		ctx.fillRect(0, 100, 100, 100);
+		ctx.fillRect(300, 0, 100, 100);
+		ctx.fillRect(200, 100, 100, 100);
+		ctx.fillRect(100, 200, 100, 100);
+		ctx.fillRect(0, 300, 100, 100);
+	};
+	
+	
+	//call the cheaker colors
+	cheaker();
+	cheaker2();
+	border();
+	
+	
+	
+	</script>
+	
+</body>
+
+</html>
