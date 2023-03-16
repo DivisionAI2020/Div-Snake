@@ -11,39 +11,71 @@
 	
 	.start{
 		position: absolute;
-		height:50;
-		width:50;
-		top:450px;
-		left:655px;
-		font-size: 5rem;
+		height:12%;
+		width: 36%;
+		top:45%;
+		left:32.5%;
+		font-size: 500%;
 		font-weight: bold;
 		background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
 	}
 	
 	.donation{
 			position: absolute;
-			height:50;
-			width:50;
-			top:20px;
-			left:1700px;
+			height:2.1%;
+			width:3.1%;
+			top:2.1%;
+			left:85%;
 		}
+	
+	.canvas2CSS{
+		position: absolute;
+		top: 37%;
+		left: 68%;
+		width: 100%;
+	};
 	
 	</style>
 </head>
 
 <body>
 
-<img  id="score-box" style="position: absolute; left: 750px; top: 0px" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/DivDevLogo1.png">
+<img class="divdevlogoCSS" id="score-box" style="position: absolute; left: 39.5%; top: 0%; pointer-events: none;" width=22% height=22% src="https://divisionai2020.github.io/Div-Snake/DivDevLogo1.png">
 	
-<img  id="score-box" style="position: absolute; left: 670px; top: 200px;" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/DivLogo1.png">
+<img  id="score-box" style="position: absolute; left: 36%; top: 20%; pointer-events: none;" width=21% height=20.5% src="https://divisionai2020.github.io/Div-Snake/DivLogo1.png">
 	
-<img  id="score-box" style="position: absolute; left: 920px; top: 185px;" width=400 height=200 src="https://divisionai2020.github.io/Div-Snake/SnakeLogo1.png">
+<img  id="score-box" style="position: absolute; left: 48%; top: 18%; pointer-events: none;" width=21% height=21% src="https://divisionai2020.github.io/Div-Snake/SnakeLogo1.png">
 
-<img  id="snake" style="position: absolute; left: 96px; top: 102px;" width=600 height=600 src="https://divisionai2020.github.io/Div-Snake/menu%20snake%201.png">
+<img  id="snake" style="position: absolute; left: 3.95%; top: 9.7%; pointer-events: none; z-index: 20;" width=31.5% height=62% src="https://divisionai2020.github.io/Div-Snake/menu%20snake%201.png">
 
-<img  id="snake" style="position: absolute; left: 1300px; top: 300px; z-index: 20;" width=600 height=600 src="https://divisionai2020.github.io/Div-Snake/menuSnake2.png">
+<img  id="snake" style="position: absolute; left: 64.6%; top: 30.3%; z-index: 20; pointer-events: none;" width=31.5% height=62% src="https://divisionai2020.github.io/Div-Snake/menuSnake2.png">
 
-<h1 style="position: absolute; padding-left:1800px; padding-top:0; font-size:1rem; color:black; border:3px black; font-family: Times New Roman">version 1.6.1</h1>
+<img  id="grass" style="position: absolute; left: 0%; top: 0%; z-index: 19; pointer-events: none;" width=31.5% height=62% src="https://divisionai2020.github.io/Div-Snake/grassCornerLeft.png">
+
+<img  id="grass" style="position: absolute; left: 68.5%; top: 38%; z-index: 19; pointer-events: none;" width=31.5% height=62% src="https://divisionai2020.github.io/Div-Snake/grassCornerRight.png">
+
+<img  id="easteregg" style="position: absolute; left: 1720px; top: 720px; z-index: 18; pointer-events: none;" width=200px height=200px src="https://divisionai2020.github.io/Div-Snake/NewEasterEgg.png">
+
+
+<h1 style="position: absolute; padding-left:93%; padding-top:0; font-size:100%; color:black; border:3px black; font-family: Times New Roman">version 1.5.1</h1>
+
+<h1 style="position: absolute; left:1770px; top:920px; font-size: 3rem; color:black; border:5px black; font-family: Times New Roman; z-index: 18;">hello</h1>
+
+	/* update log */
+
+	<h1 style="position: absolute; padding-left:2%; padding-top:32%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman;">Update Log:</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:34%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Added audio</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:36%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Fixed checkered pattern</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:38%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Added Tab Picture</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:40%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Selling Out (Donation Button)</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:42%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Making all Pages Fluid (dev stage)</h1>
+	
+	<h1 style="position: absolute; padding-left:2%; padding-top:44%; font-size:2rem; color:black; border:3px black; font-family: Times New Roman">Easter Egg</h1>
 
 <a href="https://divisionai2020.github.io/Div-Snake/snake%20game.html">	
 	<button class="start" onclick="" onmouseover="">Play Div Snake</button>
@@ -52,94 +84,9 @@
 <a href="https://divisionai2020.github.io/Div-Snake/Div%20Donation.html">	
 	<button class="donation" onclick="">Donate</button>
 </a>
-
-
-	<canvas id="canvas" width="600" height="600"></canvas>
-	
-<Div style="position: absolute; left:1310px; top:360px">
-	<canvas id="canvas2" width="600" height="600"></canvas>
-</Div>
 	
 	<script>
 	document.body.style.backgroundColor = "#c2c2c2";
-	
-	var canvas = document.getElementById("canvas");
-	var ctx = canvas.getContext("2d");
-	
-	var border = function () {
-		ctx.fillStyle = "grey";
-		ctx.fillRect(0, 0, 10, 600)
-		ctx.fillRect(0, 0, 600, 10)
-	};
-	
-	var cheaker = function () {
-		ctx.margin = 0;
-		ctx.fillStyle = "#2bcc2b";
-		ctx.fillRect(0, 0, 100, 100);
-		ctx.fillRect(200, 0, 100, 100);
-		ctx.fillRect(0, 200, 100, 100);
-		ctx.fillRect(100, 100, 100, 100);
-		ctx.fillRect(0, 400, 100, 100);
-		ctx.fillRect(100, 300, 100, 100);
-		ctx.fillRect(200, 200, 100, 100);
-		ctx.fillRect(300, 100, 100, 100);
-		ctx.fillRect(400, 0, 100, 100);
-	};
-	
-	var cheaker2 = function () {
-		ctx.margin = 0;
-		ctx.fillStyle = "#1d8f1d";
-		ctx.fillRect(100, 0, 100, 100);
-		ctx.fillRect(0, 100, 100, 100);
-		ctx.fillRect(300, 0, 100, 100);
-		ctx.fillRect(200, 100, 100, 100);
-		ctx.fillRect(100, 200, 100, 100);
-		ctx.fillRect(0, 300, 100, 100);
-	};
-	
-	var canvas2 = document.getElementById("canvas2");
-	var ctx2 = canvas2.getContext("2d");
-	
-	var border2 = function() {
-		ctx2.fillStyle = "grey";
-		ctx2.fillRect(590, 0, 10, 600)
-		ctx2.fillRect(0, 590, 600, 10)
-	};
-	
-	var cheaker3 = function () {
-		ctx2.margin = 0;
-		ctx2.fillStyle = "#2bcc2b";
-		ctx2.fillRect(400, 500, 100, 100);
-		ctx2.fillRect(200, 500, 100, 100);
-		ctx2.fillRect(300, 400, 100, 100);
-		ctx2.fillRect(500, 400, 100, 100);
-		ctx2.fillRect(400, 300, 100, 100);
-		ctx2.fillRect(500, 200, 100, 100);
-	};
-	
-	var cheaker4 = function () {
-		ctx2.margin = 0;
-		ctx2.fillStyle = "#1d8f1d";
-		ctx2.fillRect(500, 500, 100, 100);
-		ctx2.fillRect(300, 500, 100, 100);
-		ctx2.fillRect(100, 500, 100, 100);
-		ctx2.fillRect(500, 300, 100, 100);
-		ctx2.fillRect(500, 100, 100, 100);
-		ctx2.fillRect(400, 400, 100, 100);
-		ctx2.fillRect(300, 300, 100, 100);
-		ctx2.fillRect(400, 200, 100, 100);
-		ctx2.fillRect(200, 400, 100, 100);
-	};
-	
-	
-	//call the cheaker colors
-	cheaker3();
-	cheaker4();
-	border2();
-	cheaker();
-	cheaker2();
-	border();
-	
 	
 	</script>
 	
